@@ -7,7 +7,7 @@ body {
 
 header {
     background-color: #333;
-    color: white;
+    color: rgb(248, 244, 244);
     padding: 10px 20px;
     text-align: center;
 }
@@ -50,7 +50,7 @@ p {
 
 /* 2. Mudança de cor de fundo */
 @media (max-width: 600px) {
-    div {
+    .background-red {
         background-color: red;
     }
 }
@@ -294,4 +294,42 @@ h2 {
     .columns-container {
         flex-direction: column;
     }
+}
+
+/* 20. Formulário de Anúncio */
+form {
+    display: grid;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"], input[type="file"], textarea, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button.full-width-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+button.full-width-button:hover {
+    background-color: #0056b3;
 }

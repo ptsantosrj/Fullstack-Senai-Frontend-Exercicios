@@ -9,7 +9,7 @@
 <body>
 
     <header>
-        <h1>Anuncie Aqui</h1>
+        <h1>Bem-vindo ao Site de Anúncio</h1>
         <nav class="nav-menu">
             <ul>
                 <li><a href="index.html">Início</a></li>
@@ -19,26 +19,44 @@
         </nav>
     </header>
 
-    <main>
-        <section>
+    <main class="main-content">
+        <section class="announcement-form">
             <h2>Formulário de Anúncio</h2>
             <form action="#" method="post">
-                <label for="titulo">Título do Anúncio:</label>
-                <input type="text" id="titulo" name="titulo" required>
-
-                <label for="descricao">Descrição:</label>
-                <textarea id="descricao" name="descricao" required></textarea>
-
-                <label for="categoria">Categoria:</label>
-                <select id="categoria" name="categoria">
-                    <option value="imoveis">Imóveis</option>
-                    <option value="veiculos">Veículos</option>
-                    <option value="eletronicos">Eletrônicos</option>
+                <label for="title">Título do Anúncio:</label>
+                <input type="text" id="title" name="title" required>
+                
+                <label for="description">Descrição:</label>
+                <textarea id="description" name="description" rows="5" required></textarea>
+                
+                <label for="image">Imagem:</label>
+                <input type="file" id="image" name="image" accept="image/*">
+                
+                <label for="category">Categoria:</label>
+                <select id="category" name="category">
+                    <option value="imovel">Imóvel</option>
+                    <option value="veiculo">Veículo</option>
+                    <option value="eletronico">Eletrônico</option>
                     <option value="outros">Outros</option>
                 </select>
-
-                <button type="submit">Enviar Anúncio</button>
+                
+                <button type="submit" class="full-width-button">Publicar Anúncio</button>
             </form>
+        </section>
+
+        <section class="featured-announcements">
+            <h2>Anúncios em Destaque</h2>
+            <div class="card-container">
+                <div class="card card1">
+                    <p>Descrição do Produto 1</p>
+                </div>
+                <div class="card card2">
+                    <p>Descrição do Produto 2</p>
+                </div>
+                <div class="card card3">
+                    <p>Descrição do Produto 3</p>
+                </div>
+            </div>
         </section>
     </main>
 
